@@ -1,4 +1,3 @@
-package src.main.java;
 
 /**
  * Four phases of text processing to do. Write a method for each one.
@@ -22,7 +21,7 @@ package src.main.java;
 
 public class WordForWord {
 
-    // You'll need to setup some instance variables for the phases of processing
+    // You'll need to set up some instance variables for the phases of processing
     // you need to do on the text in the file(s).
     // And where SHOULD those POJO classes go? Inner classes? Separate public classes?
     // The decision depends on how you envision using the methods in this class.
@@ -47,6 +46,20 @@ public class WordForWord {
     }
 
     private void loadFile(String file) {
+    }
+
+    public void print(){}
+
+    public WCResult wc(String input){
+        return null;
+    }
+
+    public FrequencyMap wordFrequency(String input){
+        return null;
+    }
+
+    public FrequencyMap letterFrequency(String input){
+        return null;
     }
 
 }
