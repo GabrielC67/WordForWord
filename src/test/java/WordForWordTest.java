@@ -20,4 +20,8 @@ public class WordForWordTest {
     @Test
     void letterFrequency() {
     }
+
+    @Test
+    void frequency() {
+    }
 }

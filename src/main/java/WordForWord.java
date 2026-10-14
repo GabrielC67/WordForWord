@@ -62,4 +62,8 @@ public class WordForWord {
         return null;
     }
 
+    public double frequency(String word){
+        return 0;
+    }
+
 }
