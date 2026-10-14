@@ -1,27 +1,38 @@
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+
 public class WordForWordTest {
     @Test
     void testToString() {
     }
 
     @Test
-    void print() {
+    void printTest() {
     }
 
     @Test
-    void wc() {
+    void wcTest() {
+            WordForWord wfw = new WordForWord();
+
+            WCResult result = wfw.wc("The Blue Fox is blue.");
+
+            assertNotNull(result);
+            assertEquals(5L, result.getWords());
+            assertEquals(1L, result.getLines());
+            assertEquals(21L, result.getCharacters());
+        }
+
+    @Test
+    void wordFrequencyTest() {
     }
 
     @Test
-    void wordFrequency() {
+    void letterFrequencyTest() {
     }
 
     @Test
-    void letterFrequency() {
-    }
-
-    @Test
-    void frequency() {
+    void frequencyTest() {
     }
 }

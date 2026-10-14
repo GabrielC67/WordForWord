@@ -51,7 +51,26 @@ public class WordForWord {
     public void print(){}
 
     public WCResult wc(String input){
-        return null;
+        if (input == null || input.isEmpty()) {
+            return new WCResult(0, 0, 0);
+        }
+
+        long characters = input.length();
+        long lines = input.lines().count();
+        long words = 0;
+        boolean inWord = false;
+
+        for (int i = 0; i < input.length(); i++) {
+            char c = input.charAt(i);
+            if (Character.isWhitespace(c)) {
+                inWord = false;
+            } else if (!inWord) {
+                inWord = true;
+                words++;
+            }
+        }
+
+        return new WCResult(words, characters, lines);
     }
 
     public FrequencyMap wordFrequency(String input){
