@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="WordForWordTest" time="0.029" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="WordForWordTest" time="0.042" tests="11" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/temurin-21.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/gabesdevcomputer/Projects/WordForWord/target/surefire/surefirebooter-20261013220846360_3.jar /Users/gabesdevcomputer/Projects/WordForWord/target/surefire 2026-10-13T22-08-45_291-jvmRun1 surefire-20261013220846360_1tmp surefire_0-20261013220846360_2tmp"/>
+    <property name="sun.java.command" value="/Users/gabesdevcomputer/Projects/WordForWord/target/surefire/surefirebooter-20261013224148551_3.jar /Users/gabesdevcomputer/Projects/WordForWord/target/surefire 2026-10-13T22-41-48_509-jvmRun1 surefire-20261013224148551_1tmp surefire_0-20261013224148551_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/gabesdevcomputer/Projects/WordForWord/target/test-classes:/Users/gabesdevcomputer/Projects/WordForWord/target/classes:/Users/gabesdevcomputer/.m2/repository/org/junit/jupiter/junit-jupiter/5.12.2/junit-jupiter-5.12.2.jar:/Users/gabesdevcomputer/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.12.2/junit-jupiter-api-5.12.2.jar:/Users/gabesdevcomputer/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/gabesdevcomputer/.m2/repository/org/junit/platform/junit-platform-commons/1.12.2/junit-platform-commons-1.12.2.jar:/Users/gabesdevcomputer/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/gabesdevcomputer/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.12.2/junit-jupiter-params-5.12.2.jar:/Users/gabesdevcomputer/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.12.2/junit-jupiter-engine-5.12.2.jar:/Users/gabesdevcomputer/.m2/repository/org/junit/platform/junit-platform-engine/1.12.2/junit-platform-engine-1.12.2.jar:"/>
@@ -29,7 +29,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/gabesdevcomputer/Projects/WordForWord/target/surefire/surefirebooter-20261013220846360_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/gabesdevcomputer/Projects/WordForWord/target/surefire/surefirebooter-20261013224148551_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="21.0.12.1+1-LTS"/>
@@ -58,10 +58,15 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="printTest" classname="WordForWordTest" time="0.01"/>
+  <testcase name="wcWithNewlinesTest" classname="WordForWordTest" time="0.017"/>
+  <testcase name="printTest" classname="WordForWordTest" time="0.001"/>
+  <testcase name="wcTrailingNewlineTest" classname="WordForWordTest" time="0.001"/>
   <testcase name="testToString" classname="WordForWordTest" time="0.0"/>
-  <testcase name="wcTest" classname="WordForWordTest" time="0.004"/>
-  <testcase name="wordFrequencyTest" classname="WordForWordTest" time="0.001"/>
+  <testcase name="wcTest" classname="WordForWordTest" time="0.0"/>
+  <testcase name="wordFrequencyTest" classname="WordForWordTest" time="0.0"/>
+  <testcase name="wcNullInputTest" classname="WordForWordTest" time="0.0"/>
   <testcase name="frequencyTest" classname="WordForWordTest" time="0.001"/>
-  <testcase name="letterFrequencyTest" classname="WordForWordTest" time="0.001"/>
+  <testcase name="wcEmptyStringTest" classname="WordForWordTest" time="0.001"/>
+  <testcase name="letterFrequencyTest" classname="WordForWordTest" time="0.0"/>
+  <testcase name="wcIrregularWhitespaceTest" classname="WordForWordTest" time="0.0"/>
 </testsuite>
